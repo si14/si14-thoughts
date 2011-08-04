@@ -1,0 +1,30 @@
+ [17:39] <si14> I would really like something like port driver (or linkedin driver) to process XML
+ [17:39] <DeadZen> i hate mixed case in erlang modules
+ [17:39] <DeadZen> functionsShouldNotLookLikeThisInErlang
+ [17:40] <si14> highly tuned, full-featured stand-alone XML-processing server
+ [17:40] <DeadZen> si14: im sure it could be done pretty easily
+ [17:40] <DeadZen> si14: i dunno about xslt
+ [17:40] <ion> functionsShouldNotLookLikeThisAnywhereButItIsTheHaskellStandardSoIWillJustDealWithItWhenWritingHaskell
+ [17:40] <DeadZen> but i know ejabberd has done most of the work
+ [17:40] <DeadZen> ion: lol
+ [17:40] <DeadZen> ion: ew
+ [17:40] <si14> DeadZen: AFAIK ejabberd's approach is quite half-assed
+ [17:40] <DeadZen> thatsalmostasbadastypingitoutlikethis
+ [17:41] <DeadZen> si14: lol
+ [17:41] <DeadZen> si14: yah its pretty much just a buffer shared with a port driver
+ [17:41] <DeadZen> but then again so is zlib
+ [17:41] <MononcQc> erlang_functions_and_modules_like_this VariablesGetToBeThisWay
+ [17:41] <si14> DeadZen: I mean they use Erlang functions to deal with XML
+ [17:41] <DeadZen> si14: theres an expat driver tho
+ [17:41] <si14> DeadZen: my point is to use only XSLT :)
+ [17:42] <essen> erlang_functions_like_this_yes_but_not_too_long
+ [17:42] <DeadZen> 3 underscores max
+ [17:42] <DeadZen> this_is_getting_outta_hand
+ [17:42] <si14> DeadZen: let's say, you have an ETS with XSLT "actions" and function like xml_apply(PieceOfXML, XSLTAction) :)
+ [17:43] <DeadZen> si14: sure
+ [17:43] <DeadZen> could parallelize that a bit too
+ [17:43] <si14> this way noone is damaged, no pain, just pure awesomeness
+ [17:43] <DeadZen> rpc:pmap({xml, apply}, [], XMLPieces)
+ [17:43] <DeadZen> or something
+ [17:43] <si14> yeah. cluster of XML processing nodes
+ [17:44] <si14> neat
