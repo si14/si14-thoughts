@@ -1,0 +1,26 @@
+hoogle of erlang?
+
+ [16:25] <DeadZen> basically you should be able to do
+ [16:25] <DeadZen> module:/*
+ [16:26] <DeadZen> and search all code projects
+ [16:26] <DeadZen> for references to module:function/*
+ [16:26] <DeadZen> or function/* within that module:
+ [16:26] <DeadZen> maybe it could even suggest specs
+ [16:28] <DeadZen> a line of code that shows a functions use is worth a thousand words..
+ [16:28] <DeadZen> and it should automatically link to all known references to it
+ [16:29] <DeadZen> and publically track and highlight compatibility issues
+ [16:29] <DeadZen> nifs on datatypes could supplement the erlang versions and show real mean averages between the erlang versions and the c backed versions
+ [16:30] <DeadZen> if its not at least twice as fast, i say its not worth being a nif
+ [16:41] <MononcQc> I don't get what you mean by 'nifs on datatypes'
+ [16:42] <DeadZen> he wrote a nif for a circular array datastructure in erlang
+ [16:42] <DeadZen> i suggested there should be an erlang site with nifs for these data structures
+ [16:43] <DeadZen> turn the page
+ [16:43] <MononcQc> I suggest there should be a site for all data structures in general
+ [16:44] <DeadZen> yah
+ [16:44] <DeadZen> thats why i was suggesting erlhub
+ [16:44] <DeadZen> with the structure written in erlang first
+ [16:44] <DeadZen> and add a nif to it
+ [16:44] <DeadZen> and only if its faster by a good degree
+ [16:46] <DeadZen> robert virding has a few datastructures that arent in erlang yet
+ [16:46] <DeadZen> be wonderful to compile them all in one place
+ [16:46] <DeadZen> red black trees and stuff
